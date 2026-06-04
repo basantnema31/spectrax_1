@@ -37,7 +37,7 @@ export function UserProfileScreen({ onLogout }: UserProfileScreenProps) {
         {userProfile && (
           <div className="profile-content">
             {userProfile.photoURL && (
-              <img
+              <img loading="lazy"
                 src={userProfile.photoURL}
                 alt={userProfile.displayName || "User avatar"}
                 className="profile-avatar"
